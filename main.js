@@ -1,3 +1,4 @@
+const credentials = require('./credential-file.js');
 const { Client, GatewayIntentBits, Discord } = require("discord.js");
 
 const client = new Client({
@@ -8,12 +9,9 @@ const client = new Client({
     GatewayIntentBits.GuildMembers,
   ],
 });
+const BOT_TOKEN = credentials.token;
+client.login(BOT_TOKEN);
 
-// Replace "BOT_TOKEN" with your bot's API token
-client.login(
-    BOT_TOKEN
-);
-  
 
 // Replace "CHANNEL_ID" with the ID of the channel you want to create the daily link list for
 const targetChannelId = "1050361047590117408";
