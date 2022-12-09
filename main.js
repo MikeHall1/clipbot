@@ -11,7 +11,7 @@ const client = new Client({
 
 // Replace "BOT_TOKEN" with your bot's API token
 client.login(
-    "MTA1MDM3MDYwNDg2NTQyOTYyNA.GGe3Km.btSkU-KiqfPO_i58NnDL_zBvB2_YadqhBnzoVQ"
+    BOT_TOKEN
 );
   
 
